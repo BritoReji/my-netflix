@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+  body{
+    background-color: black;
+  }
+  header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+   
+  }
+  .logo img{
+    height: 45px;
+    left: 20px;
+    position: relative;
+  }
+  .hamburger{
+    color: rgb(255, 255, 255);
+    height: 50px;
+  }
+}

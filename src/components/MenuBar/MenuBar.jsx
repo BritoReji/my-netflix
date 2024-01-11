@@ -5,10 +5,10 @@ function MenuBar() {
     <div>
         <div className="menu">
             <ul>
-               <a href=""> <li>Home</li></a>
-               <a href=""><li>Shop</li></a> 
-             <a href="">   <li>About</li> </a>
-              <a href="">  <li>Contact</li> </a>
+               <li > <a>Home</a></li>
+               <li ><a>Shop</a></li> 
+             <li >   <a>About</a> </li>
+              <li >  <a>Contact</a> </li>
             </ul>
         </div>
     </div>

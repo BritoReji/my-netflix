@@ -12,7 +12,7 @@ function Header() {
     <div className='container'>
      <header>
       <div className="logo">
-        <img src={logo} alt=""  />
+        <img src={logo} alt="" className='logo' />
       </div>
       <div className="hamburger">
         <Hamburger toggled={isOpen} toggle={setOpen}/>

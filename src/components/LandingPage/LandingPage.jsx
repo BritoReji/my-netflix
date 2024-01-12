@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import Hamburger from 'hamburger-react' 
-import logo from '/home/brito/Desktop/my-netflix/src/assets/img/netflix-logo.png'
+import logo from '../assets/img/netflix-logo.png'
 import './Header.css'
 function LandingPage() {
   const [isOpen, setOpen] = useState(false)

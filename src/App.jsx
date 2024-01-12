@@ -11,7 +11,7 @@ function App() {
      
       <MenuBar/>
      <div className="lg">
-      <h1>USE YOUR MOBILE KID</h1>
+      <h1>OPEN WITH YOUR MOBILE KID 🗿</h1>
      </div>
     </div>
   )

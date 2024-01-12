@@ -3,7 +3,7 @@ import './MenuBar.css'
 function MenuBar() {
   return (
     <div>
-        <div className="menu">
+        <div className="menu" style={{display: 'none'}}>
             <ul>
                <li > <a>Home</a></li>
                <li ><a>Shop</a></li> 

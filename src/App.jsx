@@ -7,7 +7,8 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <LandingPage /> */}
+      
+     
       <MenuBar/>
      
     </div>

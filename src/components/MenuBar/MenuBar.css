@@ -6,6 +6,7 @@
     top: 45px;
     text-align: center;
     transition: 2ms;
+    z-index:2;
   }
 ul{
     list-style-type: none;

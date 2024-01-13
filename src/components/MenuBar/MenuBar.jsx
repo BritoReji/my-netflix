@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './MenuBar.css'
-function MenuBar() {
+function MenuBar({currstate,toggmenu}) {
+let togglemenu = ()=>{
+  toggmenu(currstate)
+}
+  
   return (
     <div>
-        <div className="menu" style={{display: 'none'}}>
+        <div className="menu" onClick={togglemenu} style={{display: 'none'}}>
             <ul>
                <li > <a>Home</a></li>
                <li ><a>Shop</a></li> 

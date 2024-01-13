@@ -9,10 +9,10 @@ let togglemenu = ()=>{
     <div>
         <div className="menu" onClick={togglemenu} style={{display: 'none'}}>
             <ul>
-               <li > <a>Home</a></li>
-               <li ><a>Shop</a></li> 
-             <li >   <a>About</a> </li>
-              <li >  <a>Contact</a> </li>
+               <li onClick={()=>alert('clicked home')} > <a>Home</a></li>
+               <li onClick={()=>alert('clicked shop')}><a>Shop</a></li> 
+             <li onClick={()=>alert('clicked about')}>   <a>About</a> </li>
+              <li onClick={()=>alert('clicked contact')}>  <a>Contact</a> </li>
             </ul>
         </div>
     </div>

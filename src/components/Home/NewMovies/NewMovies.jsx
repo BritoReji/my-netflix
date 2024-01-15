@@ -6,10 +6,10 @@ function NewMovies({movies}) {
 
     const [newm, setnew] = useState([])
     useEffect(()=>{
-        let TOKEN = ' eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMGUyZWU5MjFjZmU4NjdkMGFkZWFkYWE2ZDE3NGUyNyIsInN1YiI6IjY1YTUxYWZjNjQ3NjU0MDEyZWQ2ZjVmZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.JdWv4uJ_ZfUw36x8C-odmVTW5Ee7SbJysWlbUAzReIA'
+        
         axios.get(url, {
           headers: {
-            Authorization: 'Bearer ' + TOKEN //the token is a variable which holds the token
+            Authorization: 'Bearer ' + import.meta.env.VITE_TOKEN //the token is a variable which holds the token
           }
         })
         .then(response => {

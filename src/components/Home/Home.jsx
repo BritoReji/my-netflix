@@ -14,7 +14,7 @@ export default function App() {
   const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
 
   useEffect(() => {
-    alert('top rated is scrollable')
+   
    
     axios.get(url, {
       headers: {
@@ -22,7 +22,7 @@ export default function App() {
       }
     })
     .then(response => {
-      console.dir(response.data.results);
+      
       // Handle the response data, update the state, or perform other actions as needed
       setS(response.data.results);
     })

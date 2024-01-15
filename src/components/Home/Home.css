@@ -1,12 +1,10 @@
-*{
-    color: white;
-}
-.movie-banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 10%;
-    
 
+.gra{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));;
+}
+.gra h5{
+    color: white;
+    font-size: 30px;
 }

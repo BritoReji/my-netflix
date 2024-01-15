@@ -3,6 +3,7 @@ import './MenuBar.css'
 function MenuBar({currstate,toggmenu}) {
 let togglemenu = ()=>{
   toggmenu(currstate)
+  
 }
   
   return (

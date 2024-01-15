@@ -1,0 +1,17 @@
+*{
+    color: white;
+}
+.new-movies{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    
+  /* width: 40px; */
+  overflow-x: scroll;
+  
+}
+.new-movies img{
+    
+    margin-left: 5px ;
+    
+}

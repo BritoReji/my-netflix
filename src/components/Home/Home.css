@@ -1,10 +1,30 @@
 
 .gra{
+    position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));;
+    background: linear-gradient(to top, rgb(255, 3, 3), rgba(0,0,0,0));;
 }
-.gra h5{
+.gra img{
+    height: 100%;
+    width: 100%;
+}
+.gra{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgb(255, 3, 3), rgba(0,0,0,0));;
+}
+
+.gradi{
+    position: absolute;
+    z-index: 9;
+}
+.title{
     color: white;
-    font-size: 30px;
+    position: absolute;
+    z-index: 10;
+   bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

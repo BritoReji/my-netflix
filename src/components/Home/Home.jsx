@@ -10,12 +10,12 @@ import NewMovies from './NewMovies/NewMovies';
 import './Home.css'
 
 ;
-const apiKey = import.meta.env.VITE_SOME_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 export default function App() {
   const [s, setS] = useState([]);
   const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
-  console.log('API Key:', apiKey);
+  
   
 
 
@@ -60,7 +60,7 @@ export default function App() {
         ))}
        
       </Swiper>
-      <NewMovies movies={s}/>
+      <NewMovies apiKey={apiKey}/>
     </>
   );
 }

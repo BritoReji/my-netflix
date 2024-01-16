@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './NewMoies.css'
 import axios from 'axios'
-function NewMovies({movies}) {
+function NewMovies(props) {
     const url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
     
     
@@ -11,7 +11,7 @@ function NewMovies({movies}) {
        
         axios.get(url, {
           headers: {
-            Authorization: 'Bearer ' + apiKey //the token is a variable which holds the token
+            Authorization: 'Bearer ' + props.apiKey //the token is a variable which holds the token
           }
         })
         .then(response => {

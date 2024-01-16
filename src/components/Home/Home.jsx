@@ -4,21 +4,27 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import './styles.css';
 import { EffectCards, Autoplay } from 'swiper/modules';
-import process from 'dotenv';
+
 import axios from 'axios';
 import NewMovies from './NewMovies/NewMovies';
 import './Home.css'
 
+;
+const apiKey = import.meta.env.VITE_SOME_KEY;
+
 export default function App() {
   const [s, setS] = useState([]);
   const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
+  console.log('API Key:', apiKey);
+  
+
 
   useEffect(() => {
-   
+   console.log(apiKey);
    
     axios.get(url, {
       headers: {
-        Authorization: 'Bearer ' + import.meta.env.VITE_TOKEN //the token is a variable which holds the token
+        Authorization: 'Bearer ' + apiKey //the token is a variable which holds the token
       }
     })
     .then(response => {

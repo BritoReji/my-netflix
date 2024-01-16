@@ -4,6 +4,7 @@ import Home from './components/Home/Home'
 import './App.css'
 import MenuBar from './components/MenuBar/MenuBar'
 function App() {
+  console.log(import.meta.env.VITE_SOME_KEY);
   return (
     <div>
       <Header />

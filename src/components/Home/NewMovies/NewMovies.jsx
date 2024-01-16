@@ -3,13 +3,15 @@ import './NewMoies.css'
 import axios from 'axios'
 function NewMovies({movies}) {
     const url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
-
+    
+    
+    const apiKey = import.meta.env.VITE_SOME_KEY;
     const [newm, setnew] = useState([])
     useEffect(()=>{
        
         axios.get(url, {
           headers: {
-            Authorization: 'Bearer ' +  import.meta.env.VITE_TOKEN //the token is a variable which holds the token
+            Authorization: 'Bearer ' + apiKey //the token is a variable which holds the token
           }
         })
         .then(response => {

@@ -11,6 +11,7 @@ import NewMovies from './NewMovies/NewMovies';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import './Home.css'
 
 const apiKey = import.meta.env.VITE_API_KEY;
 

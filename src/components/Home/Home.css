@@ -1,30 +1,38 @@
+/* styles.css */
 
-.gra{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to top, rgb(255, 3, 3), rgba(0,0,0,0));;
-}
-.gra img{
-    height: 100%;
-    width: 100%;
-}
-.gra{
+.gra {
     position: relative;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to top, rgb(255, 3, 3), rgba(0,0,0,0));;
 }
 
-.gradi{
+.gra::before {
+    content: "";
     position: absolute;
-    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(17, 11, 11), rgba(0, 0, 0, 0));
+    z-index: 1; /* Ensure the gradient is above the image */
 }
-.title{
+
+.gra img {
+    position: relative; /* Ensure the image is stacked above the gradient */
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
     color: white;
     position: absolute;
     z-index: 10;
-   bottom: 0;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+font-size: small;
+    width: 80%;
 }
+
+/* ... (your other styles) */

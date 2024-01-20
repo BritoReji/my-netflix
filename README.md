@@ -8,4 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh\
   #WEBSITE LINK
   - https://iridescent-axolotl-9cb5ab.netlify.app/
-  - OPEN WITH YOU MOBILE 
+  - OPEN WITH YOU'RE MOBILE 
